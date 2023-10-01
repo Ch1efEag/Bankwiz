@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="css/faqs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <p>Happy to help!!</p>
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <button class="accordion">
+          What is Internet Banking?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Internet Banking is a convenient way to access your bank account Anywhere and Anytime. With this facility, Customers can view their accounts, apply for new accounts(like FD, RD, PPF), transfer funds to other accounts (within Bank, other Bank), book tickets (railway/airlines), make donations, pay taxes etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What is special about Internet Banking?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            It is available 24*7*365 and you can operate your account anytime / anywhere at your convenience.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What I need to use the services?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            You require the following to use the services
+                - Any electronic device (eg.Computer, Laptop, smartphone or Tablet) with Internet Connection
+                - Compatiable Browser
+                - Successful Registration with Internet Banking for availing the services.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Which Account holders are eligible for the Internet Banking?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            The customers maintaining SF,CA, CA(Overdraft) in case of retail customers and CC/CA in case of Corporate customers may avail the services, provided the accounts are fully KYC compliant (with regard to KYC Compliance, customer may take up with your branch).
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What is the URL for Internet Banking?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Type www.bankwiz.com in the address bar to be redirected to the Internet Banking Homepage. 
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          What will be done if Admin user id/password is expired or Admin user forgets the password?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Admin user will have to submit request to branch through PNB 1213 Form for issuance
+            of duplicate password. Branch will issue duplicate password by linking pre printed
+            password available at branch.
+          </p>
+        </div>
+      </div>
+      <div class="links">
+      <a href="http://localhost:3000" class="link1"> Home</a>
+      <a href="http://localhost:3000/contact" class="link2">Still confused? <br> Ask us anything...</a>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

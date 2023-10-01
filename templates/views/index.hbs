@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing</title>
+  <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <h1>BankWiz</h1>
+      <!-- <p>My supercool header</p> -->
+    </div>
+    <div class="topnav">
+      <a href="#">Home</a>
+      <a href="#ok">About</a>
+      <a href="http://localhost:3000/faqs">FAQ</a>
+      <a href="http://localhost:3000/contact">Contact</a>
+    </div>
+  </header>
+  <div class="page">
+    <div class="hero">
+      <div>
+        <div class="heading">
+          Bringing banking solution to your fingertips...
+        </div>
+        <div>
+          <p class="body_text">
+            An online banking application offering secure, convenient access to financial transactions and
+            account management through a user-friendly web interface.
+          </p>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn1" onclick = "window.location.href='http://localhost:3000/signup'">SIGN UP</button>
+        <button class="btn2" onclick = "window.location.href='http://localhost:3000/signin'">LOG IN </button>
+      </div>
+      {{!-- <div>
+        <img class="image-hero" src="images/Project_44-02.jpg" alt="">
+      </div> --}}
+      <!-- <hr class="line"> -->
+    </div>
+ <!-- <div>
+      <img class="image-hero" src="images/Project_44-02.jpg" alt="">
+    </div> -->
+  </div>
+  <div class="content" id = "ok">
+    <div>
+      <h6 class="end-heading">About us</h6>
+    </div>
+
+    <div>
+      <p class="body_text2">
+        An online banking application will be applicable everywhere, where banking exists and the need for
+        banking
+        exists everywhere. This application will try to achieve a more efficient and easier way to have a record
+        of
+        data through which everyone can access it according to their rights as compared to the traditional
+        banking
+        system. Every bank now uses an online banking system as it contains many features which can be accessed
+        from
+        anywhere in the world through the internet and ultimately provides ease of access to all its customers.
+        <br>
+        This online banking system demonstrates the ease of access and use among users. The main objective of
+        the
+        application is to develop an application that literally changes the way our traditional banking systems
+        work.
+        This application will be different from its competitors in the market because of its ease of
+        availability, access, and use.
+      </p>
+    </div>
+  </div>
+  <div class="container">
+
+
+    <input type="radio" name="slider" class="d-none" id="s1" checked>
+    <input type="radio" name="slider" class="d-none" id="s2">
+    <input type="radio" name="slider" class="d-none" id="s3">
+    <input type="radio" name="slider" class="d-none" id="s4">
+    <input type="radio" name="slider" class="d-none" id="s5">
+
+    <div class="cards">
+      <label for="s1" id="slide1">
+        <div class="card">
+          <div class="image">
+            <img src="/images/Project_44-02.jpg" alt="">
+          </div>
+          <div class="infos">
+            <span class="name">Create Accounts</span>
+            <span class="lorem">Any Authentic user can create an account in our bank by providing required details.</span>
+          </div>
+          <!-- <a href="/contact" class="btn-contact">details</a> -->
+
+        </div>
+      </label>
+
+      <label for="s2" id="slide2">
+        <div class="card">
+          <div class="image">
+            <img src="/images/bankwiz2.png" alt="">
+          </div>
+          <div class="infos">
+            <span class="name">Access Details</span>
+            <span class="lorem">After securely signing in the user can see the all the his/her details on the user portal.</span>
+          </div>
+          <!-- <a href="/contact" class="btn-contact">details</a> -->
+
+        </div>
+      </label>
+
+      <label for="s3" id="slide3">
+        <div class="card">
+          <div class="image">
+            <img src="/images/bankwiz_login.png" alt="">
+          </div>
+          <div class="infos">
+            <span class="name">Deposit Money</span>
+            <span class="lorem">Users can safely and easily deposit money into their bank account.</span>
+          </div>
+          <!-- <a href="/contact" class="btn-contact">details</a> -->
+
+        </div>
+      </label>
+
+      <label for="s4" id="slide4">
+        <div class="card">
+          <div class="image">
+            <img src="/images/Internet_Banking_Singgle-01_generated.jpg" alt="">
+          </div>
+          <div class="infos">
+            <span class="name">Withdrawal Money</span>
+            <span class="lorem">Users can safely withdraw money from their bank account by entering a private password.</span>
+          </div>
+          <!-- <a href="/contact" class="btn-contact">details</a> -->
+
+        </div>
+      </label>
+
+      <label for="s5" id="slide5">
+        <div class="card">
+          <div class="image">
+            <img src="/images/Untitled design.png" alt="">
+          </div>
+          <div class="infos">
+            <span class="name">Transfer Money</span>
+            <span class="lorem">Money can be easily transfered from one account to another account if it exsits.</span>
+          </div>
+          <!-- <a href="/contact" class="btn-contact">details</a> -->
+
+        </div>
+      </label>
+
+
+    </div>
+  </div>
+  <div>
+    <h6 class="end-heading">Services We Provide</h6>
+  </div>
+  <div>
+    <footer>
+      <svg viewBox="0 0 120 28">
+       <defs> 
+         <mask id="xxx">
+           <circle cx="7" cy="12" r="40" fill="#fff" />
+         </mask>
+         
+         <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="
+                 1 0 0 0 0  
+                 0 1 0 0 0  
+                 0 0 1 0 0  
+                 0 0 0 13 -9" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+           <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+        </defs> 
+      
+         <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+         <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+       
+        <g class="gooeff">
+        <circle class="drop drop1" cx="20" cy="2" r="1.8"  />
+        <circle class="drop drop2" cx="25" cy="2.5" r="1.5"  />
+        <circle class="drop drop3" cx="16" cy="2.8" r="1.2"  />
+          <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+        
+          <!-- g mask="url(#xxx)">
+          <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+          </g>
+        </g -->
+      
+      </svg>
+      <!-- <div class="icon">
+        <ul class="social_icon">
+          <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-pinterest"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      </ul>
+      </div> -->
+      </footer>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+</body>
+
+</html>
